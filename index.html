@@ -10,8 +10,8 @@
   
   <meta charset="utf-8">
   <meta name="description"
-        content="EmbodiedSplat: Online Feed-Forward Semantic 3DGS for Open-Vocabulary Scene Understanding">
-  <meta name="keywords" content="Events Camera, Scene Understanding">
+        content="Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM">
+  <meta name="keywords" content="4DGS, SLAM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EmbodiedSplat</title>
 
@@ -189,29 +189,17 @@
     
       <br>
         <div class="content has-text-justified" style="margin-top: -1rem;">
-          <p><strong><span style="color:#5c66f0;">Overall framework of EmbodiedSplat.</span></strong> We endow feed-forward 3DGS with semantic understanding capabilities by binding the two types of CLIP features: <strong><span style="color:#df6950;">1) 2D Semantic Features</span></strong> are attached to each Gaussian via <strong><span style="color:#51b18d;"><i>Sparse Coefficient Field</i></span></strong> with <strong><span style="color:#51b18d;"><i>CLIP Global Codebook</i></span></strong>, effectively reducing memory consumption while preserving semantic generalizability of CLIP. <strong><span style="color:#df6950;">2) 3D Geometric-aware Features</span></strong> are produced by aggregating the feature point cloud of 3DGS through 3D U-Net and temporal-aware memory adapter. These two types of features enable mutual compensation between semantic and 3D geometry, which results in superior understanding capabilities compared to the existing baselines.
-        </div>
+          <p><strong><span style="color:#5c66f0;">Overall framework of Flow4DGS-SLAM. We propose a 
+          </div>
       </div>
     </div>
 
     <div class="column">
         <div class="content">
-          <img src="static/images/overall.png"
+          <img src="assets/framework.png"
             class="interpolation-image">
         </div>
       </div>
-</section>
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{lee2026embodiedsplat,
-  title={EmbodiedSplat: Online Feed-Forward Semantic 3DGS for Open-Vocabulary 3D Scene Understanding},
-  author={Lee, Seungjun and Wang, Zihan and Wang, Yunsong and Lee, Gim Hee},
-  journal={arXiv preprint arXiv:2603.04254},
-  year={2026}
-}</code></pre>
-  </div>
 </section>
 
 
