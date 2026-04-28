@@ -1,5 +1,3 @@
-# Flow4DGS-SLAM
-Official Implementation of the CVPR 2026 Highlight paper "Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM".
 <p align="center">
   <h1 align="center">Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</h1>
   <p align="center">
