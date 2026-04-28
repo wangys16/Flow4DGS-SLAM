@@ -1,6 +1,6 @@
 # Flow4DGS-SLAM
 
-This is the repository that contains source code for the [Flow4DGS-SLAM website](https://0nandon.github.io/EmbodiedSplat/).
+This is the repository that contains source code for the [Flow4DGS-SLAM website](https://wangys16.github.io/Flow4DGS-SLAM/).
 
 
 
