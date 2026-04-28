@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  
+  <meta charset="utf-8">
+  <meta name="description"
+        content="EmbodiedSplat: Online Feed-Forward Semantic 3DGS for Open-Vocabulary Scene Understanding">
+  <meta name="keywords" content="Events Camera, Scene Understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmbodiedSplat</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="has-text-centered" style="margin-bottom: -1rem;" style="margin-top: -10rem;">
+          <img src="static/images/logo_white_v2.png"
+           alt="EmbodiedSplat logo"
+           style="max-height: 300px; width: auto;">
+          </div>
+            <p class="title is-3 publication-title">EmbodiedSplat 🛋️: Online Feed-Forward Semantic 3DGS <br> for Open-Vocabulary 3D Scene Understanding<br></p>
+          <h1 class="title is-4"><strong class="venue-glow">CVPR 2026</strong></h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/seungjun-lee-43101a261/">Seungjun Lee</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=7rf6Bw4AAAAJ&hl=en">Zihan Wang</a>,</span>
+            <span class="author-block">
+              <a href="https://wangys16.github.io">Yunsong Wang</a>,</span>
+            <span class="author-block">
+              <a href="https://www.comp.nus.edu.sg/~leegh/">Gim Hee Lee</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 1em;">National University of Singapore</span><br>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2603.04254"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2603.04254"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/0nandon/EmbodiedSplat"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+      <div class="column">
+        <div class="content"> 
+          <img src="static/images/teaser/teaser.png" class="interpolation-image">
+        </div>
+      </div>
+      </div>
+      <br>
+      <h2 class="subtitle has-text-centered" style="margin-bottom: 0rem; margin-top: -2rem;">
+      <div class="content has-text-justified">
+      <strong><span style="color:#5c66f0;">Build and understand at Once!</span></strong> By taking over 300 streaming images, our <span class="inline-wordmark" data-text="EmbodiedSplat">EmbodiedSplat</span> reconstructs whole-scene open-vocabulary 3DGS in online manner at up to 5-6 FPS per-frame processing time. Reconstructed scene supports diverse perception tasks such as open-vocabulary 3D semantic segmentation, 2D-rendered semantic segmentation and novel-view color synthesis with depth rendering.
+      </div>
+      </h2>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+      <div class="column">
+        <div class="content"> 
+          <div class="video" style="text-align: center;">
+          <video autoplay loop muted style="width: 80%; height: auto;">
+                <source src="./static/images/teaser/teaser.mov" type="video/mp4">
+            </video></div>
+        </div>
+      </div>
+      </div>
+      <br>
+      <h2 class="subtitle has-text-centered" style="margin-bottom: 2rem; margin-top: 0rem;">
+      <div class="content has-text-justified">
+      💡 Our <span class="inline-wordmark" data-text="EmbodiedSplat">EmbodiedSplat</span> simultaneously constructs RGB and open-vocabulary semantic field in online manner. During the exploration, it even refines the part with noisy semantic by exploiting our novel Online Sparse Coefficient Field with CLIP Global Codebook.
+      </div>
+      </h2>
+
+      <h2 class="subtitle has-text-centered" style="margin-bottom: 0rem; margin-top: 0rem;">
+      ✔️ Online 3DGS &nbsp; ✔️ Feed-Forward Design &nbsp; ✔️ Near Real-time (5-6 FPS) &nbsp; <br> ✔️ Whole-scene (+300 images) &nbsp; ✔️ Memory-Efficient &nbsp; ✔️ Fast 3D Search 
+      </h2>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+
+      <!-- Affordances 1 -->
+      <div class="column">
+        <div class="content">
+          <div class="video-hover">
+          <video autoplay loop muted>
+                <source src="./static/images/teaser/guitar.mov" type="video/mp4">
+            </video></div>
+            <center>
+            <div style="margin-top: 0.5rem;"><p>
+              <i>I wanna hear the music.</i>
+            </p></div>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content"> 
+          <div class="video-hover">
+          <video autoplay loop muted>
+                <source src="./static/images/teaser/toilet.mov" type="video/mp4">
+            </video></div>
+            <center>
+            <div style="margin-top: 0.5rem;"><p>
+              <i>I wanna pee.</i>
+            </p></div>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <div class="video-hover">
+          <video autoplay loop muted>
+                <source src="./static/images/teaser/chair.mov" type="video/mp4">
+            </video></div>
+            <center>
+            <div style="margin-top: 0.5rem;"><p>
+              <i>Where can I sit?</i>
+            </p></div>
+          </center>
+        </div>
+      </div>
+      </div>
+      <br>
+      <h2 class="subtitle has-text-centered" style="margin-top: -2rem;">
+     💡 Our <span class="inline-wordmark" data-text="EmbodiedSplat">EmbodiedSplat</span> can localize the 3D objects based on the free-form language along its exploration. 
+    </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Understanding a 3D scene immediately with its exploration is essential for embodied tasks, where an agent must construct and comprehend the 3D scene in an online and nearly real-time manner. In this study, we propose EmbodiedSplat, an online feed-forward 3DGS for open-vocabulary scene understanding that enables simultaneous online 3D reconstruction and 3D semantic understanding from the streaming images. Unlike existing open-vocabulary 3DGS methods which are typically restricted to either offline or per-scene optimization setting, our objectives are two-fold: <strong><span style="color:#df6950;">1)</span></strong> Reconstructs the semantic-embedded 3DGS of the entire scene from over 300 streaming images in an online manner. <strong><span style="color:#df6950;">2)</span></strong> Highly generalizable to novel scenes with feed-forward design and supports nearly real-time 3D semantic reconstruction when combined with real-time 2D models. To achieve these objectives, we propose an Online Sparse Coefficients Field with a CLIP Global Codebook where it binds the 2D CLIP embeddings to each 3D Gaussian while minimizing memory consumption and preserving the full semantic generalizability of CLIP. Furthermore, we generate 3D geometric-aware CLIP features by aggregating the partial point cloud of 3DGS through 3D U-Net to compensate the 3D geometric prior to 2D-oriented language embeddings. Extensive experiments on diverse indoor datasets, including ScanNet, ScanNet++, and Replica, demonstrate both the effectiveness and efficiency of our method. Code will be publicly available on project website.
+
+          <br><br>
+          💡 Most of the semantic 3DGS works leverage 2D rendering function to distill/bind language embeddings to 3DGS. <strong><span style="color:#5c66f0;">We don't!</span></strong> <br><br>
+          💡 Instead, we propose clearly distinct yet creative strategy called <strong><span style="color:#df6950;">Online Sparse Coefficient Field</span></strong> and <strong><span style="color:#df6950;">CLIP Global Codebook</span></strong> to bind language embeddings while minimizing the memory consumption and not losing semantic capability of 2D VLM.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Contributions</h2>
+      <br>
+        <div class="content has-text-justified" style="margin-top: -2rem;">
+          <ol>
+            <li>Novel framework for embodied 3D perception which enables <strong><span style="color:#51b18d;"><i>online, whole-scene</i></span></strong> reconstruction for <strong><span style="color:#51b18d;"><i>language-embedded 3DGS</i></span></strong> with up to <strong><span style="color:#51b18d;"><i>5-6 FPS</i></span></strong> inference speed.</li>
+            <li>Combination of <strong><span style="color:#51b18d;"><i>2D CLIP Features</i></span></strong> with rich semantic capabilities and <strong><span style="color:#51b18d;"><i>3D CLIP Features</i></span></strong> with geometric prior.</li>
+            <li><strong><span style="color:#51b18d;"><i>Sparse Coefficient Field</i></span></strong> with <strong><span style="color:#51b18d;"><i>CLIP Global Codebook</i></span></strong> to store the per-Gaussian language embeddings compactly.</li>
+            <li>Experiment results show that our framework significantly surpasses the existing semantic 3DGS in terms of segmentation performance and scene reconstruction time.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+       
+        <h2 class="title is-3">Overall Framework of EmbodiedSplat</h2>
+    
+      <br>
+        <div class="content has-text-justified" style="margin-top: -1rem;">
+          <p><strong><span style="color:#5c66f0;">Overall framework of EmbodiedSplat.</span></strong> We endow feed-forward 3DGS with semantic understanding capabilities by binding the two types of CLIP features: <strong><span style="color:#df6950;">1) 2D Semantic Features</span></strong> are attached to each Gaussian via <strong><span style="color:#51b18d;"><i>Sparse Coefficient Field</i></span></strong> with <strong><span style="color:#51b18d;"><i>CLIP Global Codebook</i></span></strong>, effectively reducing memory consumption while preserving semantic generalizability of CLIP. <strong><span style="color:#df6950;">2) 3D Geometric-aware Features</span></strong> are produced by aggregating the feature point cloud of 3DGS through 3D U-Net and temporal-aware memory adapter. These two types of features enable mutual compensation between semantic and 3D geometry, which results in superior understanding capabilities compared to the existing baselines.
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+        <div class="content">
+          <img src="static/images/overall.png"
+            class="interpolation-image">
+        </div>
+      </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{lee2026embodiedsplat,
+  title={EmbodiedSplat: Online Feed-Forward Semantic 3DGS for Open-Vocabulary 3D Scene Understanding},
+  author={Lee, Seungjun and Wang, Zihan and Wang, Yunsong and Lee, Gim Hee},
+  journal={arXiv preprint arXiv:2603.04254},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this website</a>.
+            We would like to thank Utkarsh Sinha and Keunhong Park.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
