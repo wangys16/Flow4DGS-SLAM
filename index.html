@@ -13,7 +13,7 @@
         content="Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM">
   <meta name="keywords" content="4DGS, SLAM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EmbodiedSplat</title>
+  <title>Flow4DGS-SLAM</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -54,11 +54,6 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <div class="has-text-centered" style="margin-bottom: -1rem;" style="margin-top: -10rem;">
-          <img src="static/images/logo_white_v2.png"
-           alt="EmbodiedSplat logo"
-           style="max-height: 300px; width: auto;">
-          </div>
             <p class="title is-3 publication-title">Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</p>
           <h1 class="title is-4"><strong class="venue-glow">CVPR 2026 <red>Highlight</red></strong></h1>
           <div class="is-size-5 publication-authors">
@@ -166,30 +161,12 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Contributions</h2>
-      <br>
-        <div class="content has-text-justified" style="margin-top: -2rem;">
-          <ol>
-            <li>Novel framework for embodied 3D perception which enables <strong><span style="color:#51b18d;"><i>online, whole-scene</i></span></strong> reconstruction for <strong><span style="color:#51b18d;"><i>language-embedded 3DGS</i></span></strong> with up to <strong><span style="color:#51b18d;"><i>5-6 FPS</i></span></strong> inference speed.</li>
-            <li>Combination of <strong><span style="color:#51b18d;"><i>2D CLIP Features</i></span></strong> with rich semantic capabilities and <strong><span style="color:#51b18d;"><i>3D CLIP Features</i></span></strong> with geometric prior.</li>
-            <li><strong><span style="color:#51b18d;"><i>Sparse Coefficient Field</i></span></strong> with <strong><span style="color:#51b18d;"><i>CLIP Global Codebook</i></span></strong> to store the per-Gaussian language embeddings compactly.</li>
-            <li>Experiment results show that our framework significantly surpasses the existing semantic 3DGS in terms of segmentation performance and scene reconstruction time.</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
        
         <h2 class="title is-3">Overall Framework of EmbodiedSplat</h2>
     
       <br>
         <div class="content has-text-justified" style="margin-top: -1rem;">
-          <p><strong><span style="color:#5c66f0;">Overall framework of Flow4DGS-SLAM. We propose a 
+          <p><strong><span style="color:#5c66f0;">Overall framework of Flow4DGS-SLAM. Given input RGB-D video, we first extract the prior semantic mask and optical flow, and feed them into a camera-induced motion decomposition module to filter out category-agnostic motion mask and solve an optical-flow guided camera initialization. The static gaussians help refine the camera pose during tracking, and the dynamic Gaussians are represented in a hybrid form, combined with a scene flow Gaussian propagation module and an adaptive gaussian insertion module to accelerate training.
           </div>
       </div>
     </div>
