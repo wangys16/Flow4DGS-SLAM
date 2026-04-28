@@ -23,19 +23,6 @@ Official Implementation of the CVPR 2026 Highlight paper "Flow4DGS-SLAM: Optical
 <strong>Efficient Dynamic Reconstruction + SLAM</strong>: Our Flow4DGS-SLAM solves the complex dynamic mapping and tracking task in a much more efficient pipeline.
 </p>
 
-
-<details open="open" style='padding: 10px; border-radius:5px 30px 30px 5px; border-style: solid; border-width: 1px;'>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#todo">TODO</a>
-    </li>
-    <li>
-      <a href="#citation">Citation</a>
-    </li>
-  </ol>
-</details>
-
 ## News:
 
 - [2026/04/09] Flow4DGS-SLAM is selected as a <strong>Highlight</strong> paper 🚀.
