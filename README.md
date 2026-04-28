@@ -16,7 +16,7 @@ Official Implementation of the CVPR 2026 Highlight paper "Flow4DGS-SLAM: Optical
 
 <p align="center">
   <a href="">
-    <img src="https://github.com/wangys16/Flow4DGS-SLAM/tree/main/assets/teaser_cropped.pdf" alt="Logo" width="100%">
+    <img src="https://github.com/wangys16/Flow4DGS-SLAM/tree/main/assets/teaser_cropped.png" alt="Logo" width="100%">
   </a>
 </p>
 <p align="center">
