@@ -27,4 +27,4 @@
 - [2026/02/21] Flow4DGS-SLAM is accepted to <strong>CVPR 2026</strong> 🔥.
 
 ## TODO
-- [ ] Release the code of Flow4DGS-SLAM
+- [ ] Release the code of Flow4DGS-SLAM before June.
