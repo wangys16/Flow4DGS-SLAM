@@ -1,2 +1,7 @@
-# Flow4DGS-SLAM
-Official Implementation of the CVPR 2026 Highlight paper "Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM".
+# EmbodiedSplat 🛋️
+
+This is the repository that contains source code for the [Flow4DGS-SLAM website](https://0nandon.github.io/EmbodiedSplat/).
+
+
+# Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
