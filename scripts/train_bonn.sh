@@ -1,0 +1,9 @@
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/ballon.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/ballon2.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/bonn_ps_trk.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/bonn_ps_trk2.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/synchronous.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/synchronous2.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/placing_box.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/placing_box2.yaml --eval --dynamic --exp_name=ours_ --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/config.yaml --config configs/rgbd/bonn/placing_box3.yaml --eval --dynamic --exp_name=ours_ --save_results=0

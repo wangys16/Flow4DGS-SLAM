@@ -1,0 +1,117 @@
+Dataset:
+  Calibration:
+    cx: 320.1
+    cy: 247.6
+    depth_scale: 5000.0
+    distorted: false
+    fx: 535.4
+    fy: 539.2
+    height: 480
+    k1: 0.0
+    k2: 0.0
+    k3: 0.0
+    p1: 0.0
+    p2: 0.0
+    width: 640
+  adaptive_pointsize: true
+  dataset_path: datasets/tum/rgbd_dataset_freiburg3_walking_xyz
+  pcd_downsample: 128
+  pcd_downsample_init: 32
+  point_size: 0.01
+  seg_chair: true
+  sensor_type: depth
+  type: tum
+Results:
+  eval_rendering: true
+  save_dir: results
+  save_results: true
+  save_trj: true
+  save_trj_kf_intv: 5
+  use_gui: false
+  use_wandb: false
+Training:
+  alpha: 0.9
+  edge_threshold: 1.1
+#  flow_grad_loss: 10.0
+  flow_loss: 3.0
+  gaussian_extent: 1.0
+  gaussian_reset: 2001
+  gaussian_th: 0.7
+  gaussian_update_every: 150
+  # dygs_gaussian_update_every: 50
+  gaussian_update_offset: 50
+  init_gaussian_extent: 30
+  init_gaussian_reset: 500
+  init_gaussian_th: 0.005
+  init_gaussian_update: 100
+  init_itr_num: 1050
+  kf_cutoff: 0.3
+  kf_interval: 5
+  kf_min_translation: 0.05
+  kf_overlap: 0.9
+  kf_translation: 0.08
+  lr:
+    cam_rot_delta: 0.003
+    cam_trans_delta: 0.001
+  mapping_itr_num: 50
+  mask_loss: 0.01
+  offset_loss: 1.0
+  pose_window: 3
+  prune_mode: slam
+  rgb_boundary_threshold: 0.01
+  single_thread: true
+  size_threshold: 20
+  spherical_harmonics: false
+  tracking_itr_num: 100
+  window_size: 8
+  stop_xyz_grad: true
+model_params:
+  data_device: cuda
+  dynamic_model: offset
+  flow_offset: true
+  insertion: true
+  model_path: ''
+  resolution: -1
+  sh_degree: 0
+  source_path: ''
+  use_arap: false
+  use_droid: false
+  use_rbf: true
+  use_gmm: true
+  use_gmm_rot: true
+  use_rigid: false
+  use_knn: true
+  knn_n: 8
+  depth_check: true
+  flow_mask: true
+  flow_cam: true
+  sd: true
+  # interp_type: cube
+  white_background: false
+opt_params:
+  deformation_lr_delay_mult: 0.01
+  deformation_lr_final: 1.6e-05
+  deformation_lr_init: 0.00016
+  densification_interval: 100
+  densify_from_iter: 500
+  densify_grad_threshold: 0.0002
+  densify_until_iter: 15000
+  feature_lr: 0.0025
+  grid_lr_final: 0.00016
+  grid_lr_init: 0.0016
+  iterations: 30000
+  lambda_dssim: 0.2
+  opacity_lr: 0.05
+  opacity_reset_interval: 3000
+  percent_dense: 0.01
+  position_lr_delay_mult: 0.01
+  position_lr_final: 1.6e-06
+  position_lr_init: 0.00016
+  position_lr_max_steps: 30000
+  rotation_lr: 0.001
+  scaling_lr: 0.001
+  trbfc_lr: 0.0001
+  trbfs_lr: 0.04
+pipeline_params:
+  compute_cov3D_python: false
+  convert_SHs_python: false

@@ -1,0 +1,9 @@
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/ballon.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/ballon2.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/bonn_ps_trk.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/bonn_ps_trk2.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/synchronous.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/synchronous2.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/placing_box.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/placing_box2.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
+python slam.py --inherit_from configs/rgbd/bonn/rb_flowcam_sd.yaml --config configs/rgbd/bonn/placing_box3.yaml --eval --dynamic --exp_name=rb_flowcam_sd --save_results=0
